@@ -48,81 +48,70 @@ class _HomePageState extends State<HomePage> {
       //   title: Text(widget.title),
       // ),
       backgroundColor: Colors.green,
-      body: Stack(children: <Widget>[
-        Container(
-            decoration: BoxDecoration(
-          image: DecorationImage(
-            image: AssetImage("assets/images/planet.jpg"),
-            fit: BoxFit.cover,
-          ),
-        )),
-        // Container(
-        //   color: Colors.red,
-        // ),
-        Positioned(
-          top: 0,
-          bottom: 0,
-          left: 0,
-          right: 0,
-          child: BackdropFilter(
-            filter: ImageFilter.blur(sigmaX: 5, sigmaY: 5),
-            child: Container(
-              color: Colors.white.withOpacity(0.2),
-            ),
-          ),
-        ),
-        Center(
-          child: Padding(
-            padding: EdgeInsets.fromLTRB(40, 0, 40, 0),
-            child: Column(
-              children: <Widget>[
-                Padding(
-                  padding: EdgeInsets.only(top: 85, bottom: 10),
-                  child: ClipRRect(
-                    borderRadius: BorderRadius.circular(15.0),
-                    child: Image.asset(
-                      ("assets/images/logo.png"),
-                      height: 60.0,
-                      width: 60.0,
+      body: Container(
+          child: Center(
+            child: SingleChildScrollView(
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: <Widget>[
+                    Padding(
+                      padding: EdgeInsets.only(bottom: 30),
+                      child: LbsText(
+                          fontSize: 16,
+                          title: "Username 1",
+                          description: "Please, insert you username / email",
+                          icon: Icons.person),
                     ),
-                  ),
-                ),
-                Text(
-                  "JOURNEY",
-                  style: TextStyle(color: Colors.white, fontSize: 12),
-                ),
-                Expanded(
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: <Widget>[
-                      Padding(
-                        padding: EdgeInsets.only(bottom: 30),
-                        child: LbsText(
-                            fontSize: 16,
-                            title: "Username",
-                            description: "Please, insert you username / email",
-                            icon: Icons.person),
-                      ),
-                      LbsText(
-                        fontSize: 16,
-                        title: "Password",
-                        description: "Please, insert your password",
-                        icon: Icons.lock,
-                        password: true,
-                      )
-                    ],
-                  ),
-                ),
-                // RaisedButton(
-                //   onPressed: null,
-                //   child: Text("Login"),
-                //   color: Colors.white,
-                // )
-              ],
-            ),
-          ),
-        )
-      ]),
+                    Padding(
+                      padding: EdgeInsets.only(bottom: 30),
+                      child: LbsText(
+                          fontSize: 16,
+                          title: "Username 2",
+                          description: "Please, insert you username / email",
+                          icon: Icons.person),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.only(bottom: 30),
+                      child: LbsText(
+                          fontSize: 16,
+                          title: "Username 3",
+                          description: "Please, insert you username / email",
+                          icon: Icons.person),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.only(bottom: 30),
+                      child: LbsText(
+                          fontSize: 16,
+                          title: "Username 4",
+                          description: "Please, insert you username / email",
+                          icon: Icons.person),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.only(bottom: 30),
+                      child: LbsText(
+                          fontSize: 16,
+                          title: "Username 5",
+                          description: "Please, insert you username / email",
+                          icon: Icons.person),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.only(bottom: 30),
+                      child: LbsText(
+                          fontSize: 16,
+                          title: "Username 6",
+                          description: "Please, insert you username / email",
+                          icon: Icons.person),
+                    ),
+                    LbsText(
+                      fontSize: 16,
+                      title: "Password",
+                      description: "Please, insert your password",
+                      icon: Icons.lock,
+                      password: true,
+                    )
+                  ],
+                ))
+          )),
       // floatingActionButton: FloatingActionButton(
       //   onPressed: _incrementCounter,
       //   tooltip: 'Increment',
